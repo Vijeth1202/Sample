@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="dstyle.css">
+    <title>Css grid Admin Dash</title>
+ </head>
+
+ <body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav__icon" onclick="toggleSidebar()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="navbar__left">
+                <a href="#">Students</a>
+                <a href="#">Videos</a>
+                <a class="active-link" href="#">Admin</a>
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fas fa-search"></i></a>
+                <a href="#">
+                <i class="fas fa-history"></i>
+                <a href="#">
+                    <img width="40" src="man.jpg" alt="" />
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="main__container">
+                <div class="main__title">
+                    <img src="tutor.jpg" alt="">
+                    <div class="main__greeting">
+                        <h1>Hello!</h1>
+                        <p>Welcome to Admin Dashboard</p>
+                    </div>
+                </div>
+
+                <div class="main__cards">
+
+                    <div class="card">
+                        <i class="fas fa-user fa-2x text-blue"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Students</p>
+                             </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-users fa-2x text-red"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Staffs</p>
+                             </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-video fa-2x text-green"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Videos</p>
+                             </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-file fa-2x text-yellow"></i>
+                        <div class="card__inner">
+                            <p class="text-primary-p">Documents</p>
+                             </div>
+                    </div>
+                </div>
+
+                <div class="charts">
+
+                    <div class="charts__left">
+                        <div class="clt">
+                            <div>
+                                <h1>Students Reports</h1>
+                                <p>Cgp,Marks</p>
+                            </div>
+                            <i class="far fa-chart-line fa-2x"></i>
+                            </div>
+                            <div id="apex1"></div>
+                        </div>
+
+                        <div class="charts__right">
+                            <div class="crt">
+                                <div>
+                                    <h1>Monthly Reports</h1>
+                                    <p>Subjects</p>
+                                </div>
+                                <i class="far fa-chart-bar fa-2x"></i>
+                                </div>
+
+                            <div class="crc">
+                                <div class="card1">
+                                    <h1>Notes</h1>
+                                    <p>pdf, docs, files</p>
+                                </div>
+
+                                <div class="card2">
+                                    <h1>Proctors</h1>
+                                    <p>staffs</p>
+                                </div>
+
+                                <div class="card3">
+                                    <h1>Students</h1>
+                                    <p>users info</p>
+                                </div>
+
+                                <div class="card4">
+                                    <h1>Circulars</h1>
+                                    <p>Notifications,Memos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       
+        
+
+
+
+
+    
+
+    <!-- We will use apex charts cdn -->
+    <script src="http://cdn.jsdeliver.net/npm/apexcharts"></script>
+    <script src="dash.js"></script>
+  </body> 
+ </html>
